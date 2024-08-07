@@ -6,7 +6,7 @@ public class StringAndRegex {
         String text = "1В тексте , который вы видите на этом изображении №2, " +
                 "посчитайте() количество букв 'е' в каждом слове+";
 
-        String result = clearText(text, regex);
+        String result = matches(text, regex);
         print(result);
     }
 
@@ -14,7 +14,7 @@ public class StringAndRegex {
         System.out.println(result);
     }
 
-    private static String clearText(String text, String regex) {
+    private static String matches(String text, String regex) {
         return text.replaceAll(regex, "");
     }
 }
