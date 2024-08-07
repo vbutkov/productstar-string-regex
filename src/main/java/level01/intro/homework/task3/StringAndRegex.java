@@ -1,0 +1,20 @@
+package level01.intro.homework.task3;
+
+public class StringAndRegex {
+    public static void main(String[] args) {
+        String regex = "[а-яА-Я ]+";
+        String text = "1В тексте , который вы видите на этом изображении №2, " +
+                "посчитайте() количество букв 'е' в каждом слове+";
+
+        String result = clearText(text, regex);
+        print(result);
+    }
+
+    private static void print(String result) {
+        System.out.println(result);
+    }
+
+    private static String clearText(String text, String regex) {
+        return text.replaceAll(regex, "");
+    }
+}
